@@ -1,0 +1,16 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+#time-tracks {
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+#time-tracks th,
+#time-tracks td {
+  padding: 10px 20px;
+  border: 1px solid black;
+  text-align: center;
+  min-width: 200px;
+}

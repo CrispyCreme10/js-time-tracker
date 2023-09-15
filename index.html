@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Time Tracker</title>
+
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <script type="text/javascript" src="index.js"></script>
+</head>
+<body>
+  <input id="start-datetime" class="datetime" type="datetime-local" />
+  <input id="end-datetime" class="datetime" type="datetime-local" />
+
+  <button id="add-record">Add Record</button>
+  <button id="reset-dates">Reset Dates</button>
+
+  <div class="tables">
+    <div class="left">
+      <table id="time-tracks">
+        <thead>
+          <tr>
+            <th>Start Time</th>
+            <th>End Time</th>
+            <th>Time Elapsed</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <div class="right">
+      <table>
+        <thead>
+          <tr>
+            <th>Week</th>
+            <th>Target</th>
+            <th>Elapsed</th>
+            <th>Remaining</th>
+          </tr>
+        </thead>
+      </table>
+    </div>
+  </div>
+</body>
+</html>
